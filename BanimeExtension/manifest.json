@@ -1,7 +1,7 @@
 {
   "name": "Banime",
   "version": "0.1",
-  "description": "Block all weaponized autism",
+  "description": "Live the anime-free way today!",
   "manifest_version": 2,
   "content_scripts": [{
       "matches": ["<all_urls>"],
