@@ -24,7 +24,7 @@ def init():
 
 	#X_test = np.load('test_input.npy')
 	#prediction = loaded_model.predict(X_test)
-	print('prediction:', prediction)
+	#print('prediction:', prediction)
 	#print('accuracy:', accuracy)
 	graph = tf.get_default_graph()
 
