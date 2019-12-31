@@ -1,4 +1,5 @@
 var canBlock = false;
+var ip = '192.168.0.127'
 
 function getDataUri(url, callback) {
     var image = new Image();
@@ -34,7 +35,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, senderResponse){
   if(message.msg === "image" & canBlock){
     // Usage
     getDataUri(message.url, async function(dataUri) {
-        await fetch('http://192.168.0.13:5000/predict/', {
+        await fetch(`http://${ip}:5000/predict/`, {
           method: 'POST',
           body: dataUri
         })
